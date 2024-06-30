@@ -3,7 +3,7 @@ import random
 
 w = 500  # Width of box
 h = 500  # Height of box
-food_size = 10  # Size of food
+food_size = 15  # Size of food
 delay = 100  # in milliseconds
 
 # Values by which the snake will move in direction when given direction
@@ -121,11 +121,12 @@ screen.tracer(0)
 # Define snake setup
 pen = t.Turtle("square")
 pen.penup()
+pen.color("green")  # Change snake color
 
 # Define food setup
 food = t.Turtle()
-food.shape("square")
-food.color("blue")
+food.shape("circle")  # Change shape to circle
+food.color("red")  # Change food color
 food.shapesize(food_size / 20)
 food.penup()
 
